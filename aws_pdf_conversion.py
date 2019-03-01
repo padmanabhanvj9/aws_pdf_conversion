@@ -151,15 +151,15 @@ align="L")
     #file = open('Amazonpollyvoice.mp3', 'r+')
 
     
-    client   = boto3.resource('s3',
+   client   = boto3.resource('s3',
                               aws_access_key_id=AWS_ACCESS_KEY,
                               aws_secret_access_key=AWS_ACCESS_SECRET_KEY,
                               config=Config(signature_version='s3v4'))
     #transfer = S3Transfer(client)
-    print("its came")
+   print("its came")
     #extra_args = {'ContentType': "audio/mp3"}
-    client.Bucket(bucket_name).put_object(Key='amaon_pdf_conversion_file.pdf',Body=data)
-    print ('It worked!')
+   client.Bucket(bucket_name).put_object(Key='amaon_pdf_conversion_file.pdf',Body=data)
+   print ('It worked!')
    
 
 print("hihlo")
