@@ -6,8 +6,8 @@ import urllib
 #import psycopg2
 import random
 import json
-#app = Flask(__name__)
-#@app.route("/send_sms",methods=['POST'])
+app = Flask(__name__)
+@app.route("/send_pdf",methods=['GET'])
 
 def index():
 
