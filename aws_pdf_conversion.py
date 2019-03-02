@@ -94,7 +94,7 @@ def index():
    pdf.cell(100,5, txt="Mobile Number : %s"%phone, ln=1, align="J")
    pdf.cell(10)
    pdf.cell(100,5, txt="Message : %s"%conf_no, ln=1, align="J")
-   pdf.image('room.jpg', 100, 100, 70)
+   pdf.image('![room](https://user-images.githubusercontent.com/29862662/53677945-1426bc80-3cde-11e9-8efc-f5de53e0054e.jpg)', 100, 100, 70)
    pdf.image('Qualityinn.png', 10, 8, 33)
    pdf.cell(100,5, txt=" ", ln=1, align="J")
    pdf.cell(100,5, txt=" ", ln=1, align="J")
