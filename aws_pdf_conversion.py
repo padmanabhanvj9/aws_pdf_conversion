@@ -67,6 +67,7 @@ def index():
    new_list.append(pdf.output('pdf_converson.pdf','F'))
            
    data = open('pdf_converson.pdf','rb')
+   '''
    AWS_ACCESS_KEY ='AKIAILEFWKUGECA7YHWA'
    AWS_ACCESS_SECRET_KEY = '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'
    bucket_name = 'image-upload-rekognition'
@@ -81,6 +82,7 @@ def index():
    print ('It worked!')
    print("https://s3.amazonaws.com/image-upload-rekognition/pdf_converson.pdf")
    #return(pdf.output('pdf_converson.pdf'))
+   '''
    return(json.dumps({'Status': 'Success', 'StatusCode': '200','ReturnValue': "https://s3.amazonaws.com/image-upload-rekognition/pdf_converson.pdf"  ,'ReturnCode':'RRTS'},indent=4))
    
 
