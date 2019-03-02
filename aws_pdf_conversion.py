@@ -1,5 +1,6 @@
 from fpdf import FPDF, HTMLMixin
 from flask import Flask,request
+import webbrowser
 import boto3
 from botocore.client import Config
 import urllib
@@ -68,6 +69,6 @@ def index():
            
    data = open('pdf_converson.pdf','rb')
 
-
+   return (webbrowser.open("https://s3.amazonaws.com/image-upload-rekognition/pdf_converson.pdf"))
 print("hihlo")
 index()
