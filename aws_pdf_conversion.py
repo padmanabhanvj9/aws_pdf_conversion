@@ -7,6 +7,9 @@ import urllib
 import random
 import json
 app = Flask(__name__)
+@app.route("/",methods=['GET'])
+def main():
+   return("hello daisy")
 @app.route("/send_pdf",methods=['GET'])
 
 def index():
