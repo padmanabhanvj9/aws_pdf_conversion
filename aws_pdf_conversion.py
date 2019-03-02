@@ -69,6 +69,5 @@ def index():
            
    data = open('pdf_converson.pdf','rb')
 
-   return (webbrowser.open("https://s3.amazonaws.com/image-upload-rekognition/pdf_converson.pdf"))
 print("hihlo")
 index()
