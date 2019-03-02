@@ -78,6 +78,9 @@ def index():
    print ('It worked!')
    print("https://s3.amazonaws.com/image-upload-rekognition/pdf_converson.pdf")
    #return(pdf.output('pdf_converson.pdf'))
+   return(json.dumps({'Status': 'Success', 'StatusCode': '200',
+                       'ReturnValue': "https://s3.amazonaws.com/image-upload-rekognition/pdf_converson.pdf  ,'ReturnCode':'RRTS'},indent=4))
+   
 
 print("hihlo")
 index()
