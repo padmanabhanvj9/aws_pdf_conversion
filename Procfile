@@ -1,2 +1,2 @@
-web: gunicorn aws_pdf_conversion:app
+web: gunicorn awspdf:app
 
