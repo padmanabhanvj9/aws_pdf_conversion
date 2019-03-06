@@ -1,2 +1,2 @@
-web: gunicorn awspdf:app
+web: gunicorn pdf:app
 
